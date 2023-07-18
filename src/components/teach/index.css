@@ -1,0 +1,58 @@
+
+
+.cell {
+    font-size: 1.5rem;
+    color: #9e0000;
+    margin-bottom: 15px;
+}
+
+.flex {
+    display: flex;
+}
+
+.s-b {
+    justify-content: space-between;
+}
+
+.word {
+    cursor: pointer;
+}
+
+.word:hover {
+    color: red;
+    outline: 1px solid red;
+    outline-offset: 0.5rem;
+    border-radius: 5px;
+}
+
+.btn-remove {
+    background-color: #ff7e7e;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.btn-remove:hover {
+    background-color: red;
+}
+
+.color-red {
+    background-color: #ffbbbb;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.btn-back {
+    background-color: #89ff7e;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+}

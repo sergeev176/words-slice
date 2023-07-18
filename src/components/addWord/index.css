@@ -1,0 +1,43 @@
+
+
+.block {
+    padding: 20px;
+    margin-bottom: 10px;
+    /* width: 100%; */
+    border: 2px solid rgb(97, 110, 145);
+    border-radius: 15px;
+}
+
+.s-b {
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #62629e;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.btn:hover {
+    background-color: #00008b;
+}
+
+.inp {
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.descr {
+    font-size: 1.5rem;
+    color: #2020a3;
+}
+
+.color-sky {
+    background-color: #c5d6d5;
+}
