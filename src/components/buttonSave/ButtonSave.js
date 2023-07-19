@@ -32,16 +32,16 @@ const ButtonSave = () => {
     }
 
     return (
-        <div className='block text-center'>
+        <div className='save-block'>
             {!reset ? 
                 <>
-                    <button onClick={saveWordsLS} className='btn mr-20'>Сохранить изменения</button>
-                    <button className='btn' onClick={() => setReset(true)}>Сброс</button>
+                    <button onClick={saveWordsLS} className='save-button mr'>Сохранить изменения</button>
+                    <button className='save-button' onClick={() => setReset(true)}>Сброс</button>
                 </>
                 :
-                <div className='text red'>
-                    <p>нажатие на кнопку приведёт к утрате всех данных</p>
-                    <button className='btn' autoFocus onBlur={() => setReset(false)} onClick={clear}>Сброс</button>
+                <div>
+                    <p className='danger-text'>нажатие на кнопку приведёт к утрате всех данных</p>
+                    <button className='save-button' autoFocus onBlur={() => setReset(false)} onClick={clear}>Сброс</button>
                 </div>
             }
         </div>

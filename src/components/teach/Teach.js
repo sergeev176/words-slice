@@ -28,17 +28,16 @@ const Teach = () => {
 
     let res = words.map(word => {
         return (
-            <div key={word.id} className='cell'>
+            <div key={word.id}>
                 {!word.onChange ? 
-                    <div className='flex s-b'>
+                    <div className='row'>
                         <span>{word.count}</span>
                         <span className='word' onClick={() => changeWordState(word.id)}>{word.text}</span>
-                        <button className='mr-20 btn-remove' onClick={() => remoweWord(word.id)}>удалить слово</button>
+                        <button className='btn-remove' onClick={() => remoweWord(word.id)}>удалить слово</button>
                     </div>
                     :
                     <>
                         <input  autoFocus 
-                                className='mr-20 inp'
                                 value={value} 
                                 onFocus={() => findValue(word.id)} 
                                 onChange={(e) => setValue(e.target.value)} 
@@ -53,12 +52,12 @@ const Teach = () => {
     })
 
     return (
-        <div className='block color-red'>
-                <p className='m-0 cell text-center'>Слова для обучения</p>
+        <div className='teach-block'>
+                <p>Слова для обучения</p>
                 {words.length > 0 ? 
-                    <p className='m-0 cell text-center'>Для изменения слова кликните по нему</p>
+                    <p>Для изменения слова кликните по нему</p>
                     :
-                    <p className='m-0 cell text-center'>слов пока нет</p>
+                    <p>слов пока нет</p>
                 }
             <div className='list'>
                 {res}

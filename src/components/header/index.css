@@ -19,4 +19,7 @@
 
 .link:hover {
     color: #442901;
+    outline-offset: 0.5rem;
+    outline: 1px solid #442901;
+    border-radius: 5px;
 }

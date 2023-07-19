@@ -28,16 +28,16 @@ const AddWord = () => {
         setClick(true);
     }
 
-    const buttonAdd = <button className='btn' onClick={() => setClick(false)}>Добавить слово</button>
+    const buttonAdd = <button className='add-button' onClick={() => setClick(false)}>Добавить слово</button>
 
-    const description = <p className='descr'>Для добавления слова введите его на английском языке <br /> затем через дефис перевод на русском</p>
+    const description = <p className='add-descr'>Для добавления слова введите его на английском языке <br /> затем через дефис перевод на русском</p>
 
-    const inputNewWords = <input autoFocus className='inp'value={value} onBlur={() => addWord()} onChange={(e) => setValue(e.target.value)} />
+    const inputNewWords = <input autoFocus className='add-input'value={value} onBlur={() => addWord()} onChange={(e) => setValue(e.target.value)} />
 
-    const wordsCounter = <p className='descr'>В словаре слов: {words.length}</p>
+    const wordsCounter = <p className='add-descr'>В словаре слов: {words.length}</p>
 
     return (
-        <div className='block color-sky flex s-b'>
+        <div className='add-block'>
             <div>
                 {click? 
                     buttonAdd

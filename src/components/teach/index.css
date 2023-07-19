@@ -1,28 +1,36 @@
 
 
-.cell {
+p {
+    color: #942525;
+}
+
+input {
+    margin-right: 20px;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.teach-block {
+    background-color: #ffcaca;
+    text-align: center;
+    border: 1px solid #942525;
+    border-radius: 15px;
+    padding: 20px;
     font-size: 1.5rem;
-    color: #9e0000;
-    margin-bottom: 15px;
 }
 
-.flex {
+.list {
+    padding: 0 5%;
+}
+
+.row {
     display: flex;
-}
-
-.s-b {
-    justify-content: space-between;
-}
-
-.word {
-    cursor: pointer;
-}
-
-.word:hover {
-    color: red;
-    outline: 1px solid red;
-    outline-offset: 0.5rem;
-    border-radius: 5px;
+    justify-content: space-between; 
+    color: #942525;
+    margin-bottom: 10px;
 }
 
 .btn-remove {
@@ -37,22 +45,24 @@
     background-color: red;
 }
 
-.color-red {
-    background-color: #ffbbbb;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.mr-20 {
-    margin-right: 20px;
-}
-
 .btn-back {
     background-color: #89ff7e;
     padding: 0 20px;
     border: none;
     border-radius: 10px;
-    font-size: 22px;
+    font-size: 22px; 
 }
+
+.word {
+    cursor: pointer;
+}
+
+.word:hover {
+    color: red;
+    outline: 1px solid red;
+    outline-offset: 0.5rem;
+    border-radius: 5px;
+}
+
+
+

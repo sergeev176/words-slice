@@ -1,0 +1,43 @@
+
+
+.trainer-block {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 2px solid #1b8a11;
+    border-radius: 15px;
+    background-color: #bdffb7;
+}
+
+.mr {
+    margin-right: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #62629e;
+}
+
+.button:hover {
+    background-color: #00008b;
+}
+
+.trainer-row {
+    display: flex;
+}
+
+.trainer-descr {
+    text-align: center;
+    color: #1b8a11;
+    font-size: 2.5rem;
+}
+
+.text {
+    margin-right: auto;
+    color: #1b8a11;
+    font-size: 2.5rem;
+}
+

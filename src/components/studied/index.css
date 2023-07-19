@@ -1,0 +1,20 @@
+
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.studied {
+    padding: 20px;
+    margin-bottom: 15px;
+
+    border: 2px solid rgb(97, 110, 145);
+    border-radius: 15px;
+
+    text-align: center;
+    font-size: 1.5rem;
+    color: #9e0000;
+
+    background-color: #fffeb7;
+}

@@ -1,4 +1,6 @@
 
+import './index.css'
+
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -74,21 +76,21 @@ const Trainer = () => {
         nextWord();
     }
 
-    let buttonKnow   = <button className='btn mr-20' onClick={() => nextWord(word.id)}>знаю</button>
-    let buttonNoKnow = <button className='btn mr-20' onClick={() => showTranslate(word.id)}>не знаю</button>
-    let buttonResume = <button className='btn mr-20' onClick={goNext}>продолжить</button>
-    let startButton  = <button className='btn' onClick={startNewWord}>начать</button>
-    let buttonFinish = <button className='btn' onClick={() => setFinish(false)}>закончить</button>
-    let descr        = <div className='text text-center'>в базе слов нет</div>
+    let buttonKnow   = <button className='button mr' onClick={() => nextWord(word.id)}>знаю</button>
+    let buttonNoKnow = <button className='button mr' onClick={() => showTranslate(word.id)}>не знаю</button>
+    let buttonResume = <button className='button mr' onClick={goNext}>продолжить</button>
+    let startButton  = <button className='button' onClick={startNewWord}>начать</button>
+    let buttonFinish = <button className='button' onClick={() => setFinish(false)}>закончить</button>
+    let descr        = <div className='trainer-descr'>в базе слов нет</div>
 
     return (
-        <div className='block color-green'>
+        <div className='trainer-block'>
             {!finish? 
                 startButton 
                 :
                 <div>
                     {words.length > 0 ? 
-                        <div className='flex'>
+                        <div className='trainer-row'>
                             <div className='text'>
                                 {word.text}
                                 {noKnow ? ' - ' + word.translation : ''}

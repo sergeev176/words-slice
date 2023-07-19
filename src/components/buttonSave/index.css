@@ -1,15 +1,28 @@
 
 
-.text {
-    font-size: 2.5rem;
-    color: rgb(52, 134, 19);
-    margin-right: auto;
-}
 
-.text-center {
+.save-block {
     text-align: center;
+    border: 1px solid #00008b;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.red {
+.save-button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #62629e;
+}
+
+.save-button:hover {
+    background-color: #00008b;
+}
+
+.danger-text {
     color: red;
 }
